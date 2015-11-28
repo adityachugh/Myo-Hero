@@ -10,11 +10,11 @@ import Foundation
 
 class Note {
     
-    init(time: Int, action: Action) {
+    init(time: Time, action: Action) {
         self.time = time
         self.action = action
     }
     
-    let time: Int!
+    let time: Time!
     let action: Action!
 }

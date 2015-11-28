@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3828070D1C09AC0900285D26 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828070C1C09AC0900285D26 /* Time.swift */; };
+		383BA20F1C0A07B200F1E710 /* ActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383BA20E1C0A07B200F1E710 /* ActionView.xib */; };
+		383BA2111C0A084200F1E710 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383BA2101C0A084200F1E710 /* ActionView.swift */; };
+		385FB6C81C0A36E0001515B0 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385FB6C71C0A36E0001515B0 /* MyoKit.framework */; };
+		385FB6CC1C0A7160001515B0 /* Poly6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 385FB6CB1C0A7160001515B0 /* Poly6.jpg */; };
 		3860DFC91C096BEA005529B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFC81C096BEA005529B5 /* AppDelegate.swift */; };
 		3860DFCB1C096BEA005529B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFCA1C096BEA005529B5 /* ViewController.swift */; };
 		3860DFCE1C096BEA005529B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860DFCC1C096BEA005529B5 /* Main.storyboard */; };
 		3860DFD01C096BEA005529B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3860DFCF1C096BEA005529B5 /* Assets.xcassets */; };
 		3860DFD31C096BEA005529B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860DFD11C096BEA005529B5 /* LaunchScreen.storyboard */; };
-		3860DFE01C097002005529B5 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3860DFDA1C096E1B005529B5 /* MyoKit.framework */; };
 		3860DFE21C0999AA005529B5 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFE11C0999AA005529B5 /* Song.swift */; };
 		3860DFE41C099B0C005529B5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFE31C099B0C005529B5 /* Note.swift */; };
 		3860DFE61C099C1A005529B5 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFE51C099C1A005529B5 /* Action.swift */; };
@@ -21,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3828070C1C09AC0900285D26 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		383BA20E1C0A07B200F1E710 /* ActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionView.xib; sourceTree = "<group>"; };
+		383BA2101C0A084200F1E710 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		385FB6C71C0A36E0001515B0 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
+		385FB6CB1C0A7160001515B0 /* Poly6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Poly6.jpg; sourceTree = "<group>"; };
 		3860DFC51C096BEA005529B5 /* Myo Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myo Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3860DFC81C096BEA005529B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3860DFCA1C096BEA005529B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +37,6 @@
 		3860DFCF1C096BEA005529B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3860DFD21C096BEA005529B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3860DFD41C096BEA005529B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3860DFDA1C096E1B005529B5 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
 		3860DFDC1C096F0E005529B5 /* Myo Hero-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Myo Hero-Bridging-Header.h"; sourceTree = "<group>"; };
 		3860DFE11C0999AA005529B5 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		3860DFE31C099B0C005529B5 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -42,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3860DFE01C097002005529B5 /* MyoKit.framework in Frameworks */,
+				385FB6C81C0A36E0001515B0 /* MyoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,15 +76,19 @@
 		3860DFC71C096BEA005529B5 /* Myo Hero */ = {
 			isa = PBXGroup;
 			children = (
-				3860DFDA1C096E1B005529B5 /* MyoKit.framework */,
+				385FB6C71C0A36E0001515B0 /* MyoKit.framework */,
 				3860DFC81C096BEA005529B5 /* AppDelegate.swift */,
 				3860DFCA1C096BEA005529B5 /* ViewController.swift */,
 				3860DFE11C0999AA005529B5 /* Song.swift */,
 				3860DFE71C099CDA005529B5 /* SongViewController.swift */,
 				3860DFE91C099E0F005529B5 /* SongDataSource.swift */,
 				3860DFE31C099B0C005529B5 /* Note.swift */,
+				3828070C1C09AC0900285D26 /* Time.swift */,
 				3860DFE51C099C1A005529B5 /* Action.swift */,
 				3860DFCC1C096BEA005529B5 /* Main.storyboard */,
+				383BA20E1C0A07B200F1E710 /* ActionView.xib */,
+				383BA2101C0A084200F1E710 /* ActionView.swift */,
+				385FB6CB1C0A7160001515B0 /* Poly6.jpg */,
 				3860DFCF1C096BEA005529B5 /* Assets.xcassets */,
 				3860DFD11C096BEA005529B5 /* LaunchScreen.storyboard */,
 				3860DFD41C096BEA005529B5 /* Info.plist */,
@@ -143,8 +155,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383BA20F1C0A07B200F1E710 /* ActionView.xib in Resources */,
 				3860DFD31C096BEA005529B5 /* LaunchScreen.storyboard in Resources */,
 				3860DFD01C096BEA005529B5 /* Assets.xcassets in Resources */,
+				385FB6CC1C0A7160001515B0 /* Poly6.jpg in Resources */,
 				3860DFCE1C096BEA005529B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,7 +173,9 @@
 				3860DFEA1C099E0F005529B5 /* SongDataSource.swift in Sources */,
 				3860DFE21C0999AA005529B5 /* Song.swift in Sources */,
 				3860DFCB1C096BEA005529B5 /* ViewController.swift in Sources */,
+				383BA2111C0A084200F1E710 /* ActionView.swift in Sources */,
 				3860DFC91C096BEA005529B5 /* AppDelegate.swift in Sources */,
+				3828070D1C09AC0900285D26 /* Time.swift in Sources */,
 				3860DFE81C099CDA005529B5 /* SongViewController.swift in Sources */,
 				3860DFE61C099C1A005529B5 /* Action.swift in Sources */,
 				3860DFE41C099B0C005529B5 /* Note.swift in Sources */,
@@ -276,9 +292,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
 					"$(PROJECT_DIR)/Myo",
 					Hero,
 				);
@@ -289,6 +316,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Myo Hero/Myo Hero-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -297,9 +325,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
 					"$(PROJECT_DIR)/Myo",
 					Hero,
 				);
@@ -309,6 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adityachugh.Myo-Hero";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Myo Hero/Myo Hero-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

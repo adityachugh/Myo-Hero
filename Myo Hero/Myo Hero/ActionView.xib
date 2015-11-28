@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionView" customModule="Myo_Hero" customModuleProvider="target">
+            <connections>
+                <outlet property="textLabel" destination="UOl-90-gxl" id="7Uy-xr-PJV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Q3f-T4-qIl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOl-90-gxl">
+                    <rect key="frame" x="8" y="8" width="59" height="59"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="UOl-90-gxl" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="8FE-0C-Wz6"/>
+                <constraint firstItem="UOl-90-gxl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9m4-0V-WBO"/>
+                <constraint firstItem="UOl-90-gxl" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="fpN-UM-mjN"/>
+                <constraint firstItem="UOl-90-gxl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="iJp-hp-8fT"/>
+                <constraint firstItem="UOl-90-gxl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tor-Zg-Kp8"/>
+                <constraint firstItem="UOl-90-gxl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="vSI-DN-nor"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-162.5" y="-75.5"/>
+        </view>
+    </objects>
+</document>

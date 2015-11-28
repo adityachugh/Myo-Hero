@@ -11,12 +11,12 @@ import Foundation
 class SongDataSource {
     
     class func getSongs() -> [Song] {
-        var songs: [Song] = []
+        var songs = [Song]()
         
         let darudeSandstorm = Song(title: "Sandstorm", artist: "Darude")
-        darudeSandstorm.addNote(Note(time: 100, action: Action.WaveIn))
-        darudeSandstorm.addNote(Note(time: 1000, action: Action.WaveOut))
-        darudeSandstorm.addNote(Note(time: 2000, action: Action.Fist))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 5, miliseconds: 0), action: Action.WaveIn))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 10, miliseconds: 0), action: Action.WaveOut))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 15, miliseconds: 0), action: Action.Fist))
         
         songs.append(darudeSandstorm)
         

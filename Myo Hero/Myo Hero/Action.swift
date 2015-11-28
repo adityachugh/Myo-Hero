@@ -13,4 +13,5 @@ enum Action {
     case WaveOut
     case Fist
     case FingersSpread
+    case Unknown
 }
