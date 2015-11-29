@@ -22,7 +22,8 @@
 		3860DFE81C099CDA005529B5 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFE71C099CDA005529B5 /* SongViewController.swift */; };
 		3860DFEA1C099E0F005529B5 /* SongDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFE91C099E0F005529B5 /* SongDataSource.swift */; };
 		38707F131C0AA5960044CD04 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38707F121C0AA5960044CD04 /* MyoKit.framework */; };
-		38707F151C0AB06D0044CD04 /* DarudeSandstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 38707F141C0AB06D0044CD04 /* DarudeSandstorm.mp3 */; };
+		38707F191C0B433D0044CD04 /* DarudeSandstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 38707F181C0B433D0044CD04 /* DarudeSandstorm.mp3 */; };
+		38707F1B1C0B458F0044CD04 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38707F1A1C0B458F0044CD04 /* UIColorExtensions.swift */; };
 		B4CB164DDC0EB9B98F5C9DF7 /* Pods_Myo_Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD79A4440C5BE7FF7C06B4D /* Pods_Myo_Hero.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -45,7 +46,8 @@
 		3860DFE71C099CDA005529B5 /* SongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		3860DFE91C099E0F005529B5 /* SongDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDataSource.swift; sourceTree = "<group>"; };
 		38707F121C0AA5960044CD04 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
-		38707F141C0AB06D0044CD04 /* DarudeSandstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DarudeSandstorm.mp3; sourceTree = "<group>"; };
+		38707F181C0B433D0044CD04 /* DarudeSandstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DarudeSandstorm.mp3; sourceTree = "<group>"; };
+		38707F1A1C0B458F0044CD04 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		9F4C570A90F35DA2C267ED83 /* Pods-Myo Hero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myo Hero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Myo Hero/Pods-Myo Hero.debug.xcconfig"; sourceTree = "<group>"; };
 		BDD79A4440C5BE7FF7C06B4D /* Pods_Myo_Hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Myo_Hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB89D572EFDE4054E64C17E8 /* Pods-Myo Hero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myo Hero.release.xcconfig"; path = "Pods/Target Support Files/Pods-Myo Hero/Pods-Myo Hero.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,10 +99,11 @@
 				3860DFCC1C096BEA005529B5 /* Main.storyboard */,
 				383BA20E1C0A07B200F1E710 /* ActionView.xib */,
 				383BA2101C0A084200F1E710 /* ActionView.swift */,
+				38707F1A1C0B458F0044CD04 /* UIColorExtensions.swift */,
 				385FB6CB1C0A7160001515B0 /* Poly6.jpg */,
 				3860DFCF1C096BEA005529B5 /* Assets.xcassets */,
 				3860DFD11C096BEA005529B5 /* LaunchScreen.storyboard */,
-				38707F141C0AB06D0044CD04 /* DarudeSandstorm.mp3 */,
+				38707F181C0B433D0044CD04 /* DarudeSandstorm.mp3 */,
 				3860DFD41C096BEA005529B5 /* Info.plist */,
 				3860DFDC1C096F0E005529B5 /* Myo Hero-Bridging-Header.h */,
 			);
@@ -185,12 +188,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38707F191C0B433D0044CD04 /* DarudeSandstorm.mp3 in Resources */,
 				383BA20F1C0A07B200F1E710 /* ActionView.xib in Resources */,
 				3860DFD31C096BEA005529B5 /* LaunchScreen.storyboard in Resources */,
 				3860DFD01C096BEA005529B5 /* Assets.xcassets in Resources */,
 				385FB6CC1C0A7160001515B0 /* Poly6.jpg in Resources */,
 				3860DFCE1C096BEA005529B5 /* Main.storyboard in Resources */,
-				38707F151C0AB06D0044CD04 /* DarudeSandstorm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +261,7 @@
 				3860DFE81C099CDA005529B5 /* SongViewController.swift in Sources */,
 				3860DFE61C099C1A005529B5 /* Action.swift in Sources */,
 				3860DFE41C099B0C005529B5 /* Note.swift in Sources */,
+				38707F1B1C0B458F0044CD04 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

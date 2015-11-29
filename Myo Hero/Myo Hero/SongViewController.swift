@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class SongViewController: UIViewController {
+class SongViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var actionLabel: UILabel!
     @IBOutlet weak var hitLabel: UILabel!
@@ -58,6 +58,10 @@ class SongViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        audioPlayer.stop()
+    }
+    
     func setupAudioPlayer() {
         var error: NSError?
         let path = NSBundle.mainBundle().pathForResource("DarudeSandstorm", ofType: "mp3")
@@ -87,11 +91,14 @@ class SongViewController: UIViewController {
         audioPlayer.play()
     }
     
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+        
+    }
+    
     func startTimer() {
         print("Start")
         print(NSDate())
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "updateTimer", userInfo: nil, repeats: true)
-        //        NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
     }
     
     func setupSong() {

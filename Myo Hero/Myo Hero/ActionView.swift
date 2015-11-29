@@ -14,19 +14,35 @@ class ActionView: UIView {
     @IBOutlet weak var textLabel: UILabel!
     var note: Note! {
         didSet {
+            textLabel.text = ""
             switch note.action! {
             case .FingersSpread:
-                textLabel.text = "Fingers Spread"
+//                textLabel.text = "Fingers Spread"
+                view.backgroundColor = UIColor.turquoiseColor()
             case .Fist:
-                textLabel.text = "Fist"
+//                textLabel.text = "Fist"
+                view.backgroundColor = UIColor.peterRiverColor()
             case .WaveIn:
-                textLabel.text = "Wave In"
+//                textLabel.text = "Wave In"
+                view.backgroundColor = UIColor.amethystColor()
             case .WaveOut:
-                textLabel.text = "Wave Out"
+//                textLabel.text = "Wave Out"
+                view.backgroundColor = UIColor.alizarinColor()
             default:
                 textLabel.text = ""
+                view.backgroundColor = UIColor.turquoiseColor()
             }
         }
+    }
+    
+    override func awakeFromNib() {
+        
+    }
+    
+    func setup() {
+        view.layer.cornerRadius = 75/2
+        view.layer.masksToBounds = true
+        textLabel.hidden = true
     }
     
     required init?(coder aDecoder: NSCoder) {
