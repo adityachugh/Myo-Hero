@@ -10,7 +10,6 @@
 		3828070D1C09AC0900285D26 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828070C1C09AC0900285D26 /* Time.swift */; };
 		383BA20F1C0A07B200F1E710 /* ActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383BA20E1C0A07B200F1E710 /* ActionView.xib */; };
 		383BA2111C0A084200F1E710 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383BA2101C0A084200F1E710 /* ActionView.swift */; };
-		385FB6C81C0A36E0001515B0 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385FB6C71C0A36E0001515B0 /* MyoKit.framework */; };
 		385FB6CC1C0A7160001515B0 /* Poly6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 385FB6CB1C0A7160001515B0 /* Poly6.jpg */; };
 		3860DFC91C096BEA005529B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFC81C096BEA005529B5 /* AppDelegate.swift */; };
 		3860DFCB1C096BEA005529B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFCA1C096BEA005529B5 /* ViewController.swift */; };
@@ -22,13 +21,15 @@
 		3860DFE61C099C1A005529B5 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFE51C099C1A005529B5 /* Action.swift */; };
 		3860DFE81C099CDA005529B5 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFE71C099CDA005529B5 /* SongViewController.swift */; };
 		3860DFEA1C099E0F005529B5 /* SongDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DFE91C099E0F005529B5 /* SongDataSource.swift */; };
+		38707F131C0AA5960044CD04 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38707F121C0AA5960044CD04 /* MyoKit.framework */; };
+		38707F151C0AB06D0044CD04 /* DarudeSandstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 38707F141C0AB06D0044CD04 /* DarudeSandstorm.mp3 */; };
+		B4CB164DDC0EB9B98F5C9DF7 /* Pods_Myo_Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD79A4440C5BE7FF7C06B4D /* Pods_Myo_Hero.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3828070C1C09AC0900285D26 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		383BA20E1C0A07B200F1E710 /* ActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionView.xib; sourceTree = "<group>"; };
 		383BA2101C0A084200F1E710 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
-		385FB6C71C0A36E0001515B0 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
 		385FB6CB1C0A7160001515B0 /* Poly6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Poly6.jpg; sourceTree = "<group>"; };
 		3860DFC51C096BEA005529B5 /* Myo Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myo Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3860DFC81C096BEA005529B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +44,11 @@
 		3860DFE51C099C1A005529B5 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		3860DFE71C099CDA005529B5 /* SongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		3860DFE91C099E0F005529B5 /* SongDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDataSource.swift; sourceTree = "<group>"; };
+		38707F121C0AA5960044CD04 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
+		38707F141C0AB06D0044CD04 /* DarudeSandstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DarudeSandstorm.mp3; sourceTree = "<group>"; };
+		9F4C570A90F35DA2C267ED83 /* Pods-Myo Hero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myo Hero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Myo Hero/Pods-Myo Hero.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD79A4440C5BE7FF7C06B4D /* Pods_Myo_Hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Myo_Hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB89D572EFDE4054E64C17E8 /* Pods-Myo Hero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myo Hero.release.xcconfig"; path = "Pods/Target Support Files/Pods-Myo Hero/Pods-Myo Hero.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385FB6C81C0A36E0001515B0 /* MyoKit.framework in Frameworks */,
+				B4CB164DDC0EB9B98F5C9DF7 /* Pods_Myo_Hero.framework in Frameworks */,
+				38707F131C0AA5960044CD04 /* MyoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +69,8 @@
 			children = (
 				3860DFC71C096BEA005529B5 /* Myo Hero */,
 				3860DFC61C096BEA005529B5 /* Products */,
+				A173A3FF99230F428C77E0EB /* Pods */,
+				59437403AE2DDB838A6F1FCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +85,7 @@
 		3860DFC71C096BEA005529B5 /* Myo Hero */ = {
 			isa = PBXGroup;
 			children = (
-				385FB6C71C0A36E0001515B0 /* MyoKit.framework */,
+				38707F121C0AA5960044CD04 /* MyoKit.framework */,
 				3860DFC81C096BEA005529B5 /* AppDelegate.swift */,
 				3860DFCA1C096BEA005529B5 /* ViewController.swift */,
 				3860DFE11C0999AA005529B5 /* Song.swift */,
@@ -91,10 +100,28 @@
 				385FB6CB1C0A7160001515B0 /* Poly6.jpg */,
 				3860DFCF1C096BEA005529B5 /* Assets.xcassets */,
 				3860DFD11C096BEA005529B5 /* LaunchScreen.storyboard */,
+				38707F141C0AB06D0044CD04 /* DarudeSandstorm.mp3 */,
 				3860DFD41C096BEA005529B5 /* Info.plist */,
 				3860DFDC1C096F0E005529B5 /* Myo Hero-Bridging-Header.h */,
 			);
 			path = "Myo Hero";
+			sourceTree = "<group>";
+		};
+		59437403AE2DDB838A6F1FCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDD79A4440C5BE7FF7C06B4D /* Pods_Myo_Hero.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A173A3FF99230F428C77E0EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F4C570A90F35DA2C267ED83 /* Pods-Myo Hero.debug.xcconfig */,
+				DB89D572EFDE4054E64C17E8 /* Pods-Myo Hero.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3860DFD71C096BEA005529B5 /* Build configuration list for PBXNativeTarget "Myo Hero" */;
 			buildPhases = (
+				C34F14F833F9D001F06F7B28 /* Check Pods Manifest.lock */,
 				3860DFC11C096BEA005529B5 /* Sources */,
 				3860DFC21C096BEA005529B5 /* Frameworks */,
 				3860DFC31C096BEA005529B5 /* Resources */,
+				B6EBC1A77696619BD5765901 /* Embed Pods Frameworks */,
+				3DCB4778EA5EB0540AE1C56E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,10 +190,59 @@
 				3860DFD01C096BEA005529B5 /* Assets.xcassets in Resources */,
 				385FB6CC1C0A7160001515B0 /* Poly6.jpg in Resources */,
 				3860DFCE1C096BEA005529B5 /* Main.storyboard in Resources */,
+				38707F151C0AB06D0044CD04 /* DarudeSandstorm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DCB4778EA5EB0540AE1C56E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Myo Hero/Pods-Myo Hero-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6EBC1A77696619BD5765901 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Myo Hero/Pods-Myo Hero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C34F14F833F9D001F06F7B28 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3860DFC11C096BEA005529B5 /* Sources */ = {
@@ -289,6 +368,7 @@
 		};
 		3860DFD81C096BEA005529B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4C570A90F35DA2C267ED83 /* Pods-Myo Hero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -296,6 +376,12 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
 					"$(PROJECT_DIR)/Myo",
 					Hero,
 					"$(PROJECT_DIR)/Myo",
@@ -322,6 +408,7 @@
 		};
 		3860DFD91C096BEA005529B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB89D572EFDE4054E64C17E8 /* Pods-Myo Hero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -329,6 +416,12 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
+					"$(PROJECT_DIR)/Myo",
+					Hero,
 					"$(PROJECT_DIR)/Myo",
 					Hero,
 					"$(PROJECT_DIR)/Myo",

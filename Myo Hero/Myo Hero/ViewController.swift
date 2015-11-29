@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Spring
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var blurView: UIVisualEffectView!
     
 //    @IBOutlet weak var poseLabel: UILabel!
 //    @IBOutlet weak var correctLabel: UILabel!
@@ -59,6 +62,18 @@ class ViewController: UIViewController {
 //    }
 //  
     
+    
+    @IBAction func playButtonTapped(sender: AnyObject) {
+        if let devices = (TLMHub.sharedHub().myoDevices()[0] as? TLMMyo) {
+            let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("Song")
+            self.presentViewController(viewController, animated: true, completion: nil)
+        } else {
+            let alertController = UIAlertController(title: "No Myo Connected!", message: "A Myo must be connected before playing the game!", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func connectMyoButtonTapped(sender: AnyObject) {
         let settingsViewController = MyoSettingsViewController()
         
@@ -72,6 +87,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        blurView.alpha = 0
+        UIView.animateWithDuration(1) {
+            () -> Void in
+            self.blurView.alpha = 1
+        }
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         navigationController?.navigationBarHidden = true

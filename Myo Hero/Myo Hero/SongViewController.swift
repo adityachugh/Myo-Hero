@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SongViewController: UIViewController {
     
@@ -18,6 +19,8 @@ class SongViewController: UIViewController {
     @IBOutlet weak var fistView: UIView!
     @IBOutlet weak var fingerSpreadView: UIView!
     @IBOutlet weak var waveInView: UIView!
+    
+    var audioPlayer: AVAudioPlayer!
     
     var animationTriggered = false
     var actionTriggered = false
@@ -50,14 +53,38 @@ class SongViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func closeTapped(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func setupAudioPlayer() {
+        var error: NSError?
+        let path = NSBundle.mainBundle().pathForResource("DarudeSandstorm", ofType: "mp3")
+        let url = NSURL(fileURLWithPath: path!)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOfURL: url)
+        } catch let error1 as NSError {
+            error = error1
+            audioPlayer = nil
+        }
+        audioPlayer.prepareToPlay()
+    }
+    
     override func viewDidLoad() {
         setupSong()
+        setupAudioPlayer()
         currentTime = Time(minutes: 0, seconds: 0, miliseconds: 0)
         currentIndex = 0
         currentNote = song[currentIndex]
-        startTimer()
+//        startTimer()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "poseChanged", name: TLMMyoDidReceivePoseChangedNotification, object: nil)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        startTimer()
+        audioPlayer.play()
     }
     
     func startTimer() {
@@ -70,14 +97,29 @@ class SongViewController: UIViewController {
     func setupSong() {
         let darudeSandstorm = Song(title: "Sandstorm", artist: "Darude")
         
-        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 3, miliseconds: 0), action: Action.WaveIn))
-        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 6, miliseconds: 0), action: Action.WaveOut))
-        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 9, miliseconds: 0), action: Action.Fist))
-        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 12, miliseconds: 0), action: Action.WaveOut))
-        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 15, miliseconds: 0), action: Action.Fist))
-        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 18, miliseconds: 0), action: Action.WaveOut))
-        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 21, miliseconds: 0), action: Action.WaveIn))
-        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 24, miliseconds: 0), action: Action.FingersSpread))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 16, miliseconds: 0), action: Action.WaveIn))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 20, miliseconds: 0), action: Action.WaveOut))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 25, miliseconds: 0), action: Action.WaveIn))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 30, miliseconds: 0), action: Action.Fist))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 33, miliseconds: 0), action: Action.FingersSpread))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 36, miliseconds: 0), action: Action.WaveIn))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 40, miliseconds: 0), action: Action.WaveOut))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 43, miliseconds: 0), action: Action.WaveIn))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 46, miliseconds: 0), action: Action.WaveOut))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 49, miliseconds: 0), action: Action.WaveIn))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 52, miliseconds: 0), action: Action.WaveOut))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 55, miliseconds: 0), action: Action.WaveIn))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 0, seconds: 58, miliseconds: 0), action: Action.WaveOut))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 1, seconds: 1, miliseconds: 0), action: Action.Fist))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 1, seconds: 4, miliseconds: 0), action: Action.FingersSpread))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 1, seconds: 7, miliseconds: 0), action: Action.WaveIn))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 1, seconds: 10, miliseconds: 0), action: Action.WaveOut))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 1, seconds: 13, miliseconds: 0), action: Action.Fist))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 1, seconds: 16, miliseconds: 0), action: Action.FingersSpread))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 1, seconds: 19, miliseconds: 0), action: Action.Fist))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 1, seconds: 22, miliseconds: 0), action: Action.FingersSpread))
+        darudeSandstorm.addNote(Note(time: Time(minutes: 1, seconds: 25, miliseconds: 0), action: Action.Fist))
+        
         
         song = darudeSandstorm
     }
